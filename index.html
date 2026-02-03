@@ -74,9 +74,10 @@ h<!DOCTYPE html>
 
   <script>
     function yesClicked() {
-      document.getElementById("response").innerHTML =
-        "Yeah....thought so 😏";
-    }
+  document.getElementById("response").innerHTML =
+    "Yeah..thought so 😘";
+  document.getElementById("bgMusic").play();
+}
 
     const noBtn = document.getElementById("noBtn");
 
@@ -99,4 +100,8 @@ h<!DOCTYPE html>
   }, 500);
   </script>
 </body>
+  <audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 </html>
